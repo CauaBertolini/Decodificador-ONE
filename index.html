@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" .content="IE=edge">
+    <link rel="Stylesheet" href="style.css">
+    <title>Encriptador de Textos</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <img class="tela__conteudo__img" src="./imgs/icon.png">
+    </header>
+    <main class="tela">
+
+        <section class="tela__conteudo__esquerda">
+
+            <div>
+                <textarea class="tela__textarea" id="texto" cols="41" rows="4" placeholder="Digite seu texto..."></textarea>
+            </div>
+
+            <div class="information">
+                <img class="tela__information__icon" id="imgText" src="/imgs/alert.png">
+                <p class="tela__information__text">Apenas letras minúsculas e sem acento.</p>
+            </div>
+    
+            <div class="tela__buttons">
+                <button id="criptografar" class="tela__buttons__button" onclick="btnCriptografar()">Criptografar</button>
+                <button id="desencriptografar" class="tela__buttons__button" onclick="btnDesencriptografar()">Desencriptografar</button>
+            </div>
+
+        </section>
+
+        <section class="tela__conteudo__direita">
+
+            <div>
+                <textarea readonly class="tela__textarea__resposta" id="resposta"></textarea>
+            </div>
+
+            <div >
+                <button id="copiar"  class="tela__buttons__button__copiar" onclick="btnCopiar()">Copiar</button>
+            </div>
+
+        </section>
+
+    </main>
+    <footer>
+        <div>
+            <h3 class="footer__text">Desenvolvido por Cauã Bertolini</h3>
+        </div>
+    </footer>
+    <script src="program.js"></script>
+</body>
+</html>
